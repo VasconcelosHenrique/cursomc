@@ -27,7 +27,7 @@ public class Pedido implements Serializable {
 	private Integer id;
 	
 	@JsonFormat(pattern="dd/MM/yyyy HH:mm")
-	private Date instate;
+	private Date instante;
 	
 	@OneToOne(cascade=CascadeType.ALL, mappedBy="pedido")
 	private Pagamento pagamento;
@@ -50,7 +50,7 @@ public class Pedido implements Serializable {
 	public Pedido(Integer id, Date instate, Cliente cliente, Endereco enderecoEntrega) {
 		super();
 		this.id = id;
-		this.instate = instate;
+		this.instante = instate;
 		this.cliente = cliente;
 		this.enderecoEntrega = enderecoEntrega;
 	}
@@ -72,12 +72,12 @@ public class Pedido implements Serializable {
 		this.id = id;
 	}
 
-	public Date getInstate() {
-		return instate;
+	public Date getInstante() {
+		return instante;
 	}
 
-	public void setInstate(Date instate) {
-		this.instate = instate;
+	public void setInstante(Date instate) {
+		this.instante = instate;
 	}
 
 	public Pagamento getPagamento() {
