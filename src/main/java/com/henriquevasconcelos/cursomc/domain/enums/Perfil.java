@@ -1,4 +1,4 @@
-package com.henriquevasconcelos.cursomc.domain;
+package com.henriquevasconcelos.cursomc.domain.enums;
 
 public enum Perfil {
 	

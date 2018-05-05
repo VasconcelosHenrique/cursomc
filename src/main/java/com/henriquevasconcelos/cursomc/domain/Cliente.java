@@ -19,6 +19,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.henriquevasconcelos.cursomc.domain.enums.Perfil;
 import com.henriquevasconcelos.cursomc.domain.enums.TipoCliente;
 
 @Entity
